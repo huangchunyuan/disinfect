@@ -16,7 +16,7 @@ public class DisApplyBillFormPlugin extends AbstractFormPlugin {
 	public void afterCreateNewData(EventObject e) {
 		// TODO Auto-generated method stub
 		super.afterCreateNewData(e);
-		//默认带出申请人的主职部门及公司11
+		//默认带出申请人的主职部门及公司1122
 		long userId = RequestContext.get().getCurrUserId();
 		long deptId = UserServiceHelper.getUserMainOrgId(userId);
 		this.getModel().setValue("kded_dept",deptId);
