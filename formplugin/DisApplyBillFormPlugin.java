@@ -22,7 +22,7 @@ public class DisApplyBillFormPlugin extends AbstractFormPlugin {
 		this.getModel().setValue("kded_dept",deptId);
 		Map<String, Object> companyByOrg = OrgUnitServiceHelper.getCompanyfromOrg(deptId);
 		this.getModel().setValue("kded_company",companyByOrg.get("id"));
-
+		//dev modify
 	}
 	@Override
 	public void afterBindData(EventObject e) {
